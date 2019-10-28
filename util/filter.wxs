@@ -1,0 +1,20 @@
+var format = function(text){
+    if(!text){
+        return
+    }
+    var reg = getRegExp('\\\\n','g');
+    return text.replace(reg,'\n&nbsp;&nbsp;&nbsp;&nbsp;')
+}
+
+//模块 ES6 模块
+//javascript ES6 语法
+//wxs javascript两种不同的语言
+
+var limit = function(array, length){
+    return array.slice(0, length)
+}
+
+module.exports = {
+    format: format,
+    limit: limit
+}
